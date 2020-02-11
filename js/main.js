@@ -15,7 +15,7 @@
     let m = d.getMinutes();
     let s = d.getSeconds();
     let ms = d.getMilliseconds();
-    timer.textContent = '${m}:${s}.${ms}';
+    timer.textContent = `${m}:${s}.${ms}`;
 
     setTimeout(() => {
       countUp();
