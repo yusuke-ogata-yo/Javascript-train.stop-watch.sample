@@ -9,7 +9,9 @@
   let startTime;
 
   function countUp() {
-    const d = new Date(Date.now() - startTime);
+    let now = Date.now();
+    let e = now - startTime; 
+    const d = new Date(e);
     let m = d.getMinutes();
     let s = d.getSeconds();
     let ms = d.getMilliseconds();
