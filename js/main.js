@@ -9,12 +9,10 @@
   let startTime;
 
   function countUp() {
-    let now = Date.now();
-    let e = now - startTime; 
-    const d = new Date(e);
-    let m = d.getMinutes();
-    let s = d.getSeconds();
-    let ms = d.getMilliseconds();
+    const d = new Date(Date.now() - startTime);
+    let m = String(d.getMinutes()).padStart(2, '0');
+    let s = String(d.getSeconds()).padStart(2,'0');
+    let ms = String(d.getMilliseconds()).padStart(3, '0');
     timer.textContent = `${m}:${s}.${ms}`;
 
     setTimeout(() => {
