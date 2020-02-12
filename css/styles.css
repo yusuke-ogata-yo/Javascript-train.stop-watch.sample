@@ -27,4 +27,10 @@ body {
   background: #ddd;
   font-weight: bold;
   cursor: pointer;
+  user-select: none;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
 }
