@@ -29,4 +29,8 @@
   stop.addEventListener('click', () => {
     clearTimeout(timeoutId);
   });
+
+  reset.addEventListener('click', () => {
+    timer.textContent = '00:00.000';
+  });
 }
